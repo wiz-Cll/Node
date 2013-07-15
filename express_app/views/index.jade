@@ -1,5 +1,19 @@
 extends layout
 
 block content
-  h1= title
+  h1 #{title}
   p Welcome to #{title}
+   - foo = 'Jade'
+  h2 #{foo} is the view layer for Express.
+
+  - newLan = ['Ruby', 'python', 'Node', 'Go']
+  - each val in newLan
+    p newly borned languages: 
+      span= val
+  br
+  br
+  - nodeMvc = { 'ctrl': 'express', 'view': 'jade', 'module': 'mongoose'}
+  - each val, key in nodeMvc
+    p= key + ' -:- ' + val
+  - each val in stuNo
+    p(data-stuno=val)=val

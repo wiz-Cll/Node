@@ -2,7 +2,8 @@ var http = require('http');
 
 var app = http.createServer(function( req, res){
 	res.writeHead(200,{'Content-Type': 'text/plain'});
-	res.end('hello, http wolrd');
+	res.write('hello, node-dev module\n');
+	res.end('res are able to send muti msgs in one req\n');
 });
 
 var port = 8080;

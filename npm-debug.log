@@ -1,0 +1,44 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'connect' ]
+2 info using npm@1.2.32
+3 info using node@v0.10.12
+4 verbose read json /Users/chenllos/Documents/dev/Node/package.json
+5 verbose read json /Users/chenllos/Documents/dev/Node/package.json
+6 verbose cache add [ 'connect', null ]
+7 verbose cache add name=undefined spec="connect" args=["connect",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'connect',
+8 verbose parsed url   path: 'connect',
+8 verbose parsed url   href: 'connect' }
+9 silly lockFile f11a107f-connect connect
+10 verbose lock connect /Users/chenllos/.npm/f11a107f-connect.lock
+11 silly lockFile f11a107f-connect connect
+12 verbose addNamed [ 'connect', '' ]
+13 verbose addNamed [ null, '' ]
+14 silly lockFile 6c45e0f3-connect connect@
+15 verbose lock connect@ /Users/chenllos/.npm/6c45e0f3-connect.lock
+16 silly lockFile 6c45e0f3-connect connect@
+17 error Error: EACCES, open '/Users/chenllos/.npm/6c45e0f3-connect.lock'
+17 error  { [Error: EACCES, open '/Users/chenllos/.npm/6c45e0f3-connect.lock']
+17 error   errno: 3,
+17 error   code: 'EACCES',
+17 error   path: '/Users/chenllos/.npm/6c45e0f3-connect.lock' }
+18 error Please try running this command again as root/Administrator.
+19 error System Darwin 12.4.1
+20 error command "node" "/usr/local/bin/npm" "install" "connect"
+21 error cwd /Users/chenllos/Documents/dev/Node
+22 error node -v v0.10.12
+23 error npm -v 1.2.32
+24 error path /Users/chenllos/.npm/6c45e0f3-connect.lock
+25 error code EACCES
+26 error errno 3
+27 error stack Error: EACCES, open '/Users/chenllos/.npm/6c45e0f3-connect.lock'
+28 verbose exit [ 3, true ]
